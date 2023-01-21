@@ -1,0 +1,21 @@
+{
+  "content": {
+    "contentTypeID": "2",
+    "IMEI": "3564xxxxxxxxxxx",
+    "payableAddress": "0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    "computingServiceRegionID": [
+      5,
+      6,
+      8,
+      17
+    ],
+    "ESN": "0x9A9B8C7D6E5F4G3H2I1J",
+    "example_source": "https://docs.databricks.com/_extras/notebooks/source/getting-started/iotdevicegeoipds.html",
+    "cca3": "USA",
+    "device_id": 4,
+    "device_name": "sensor-pad-4mzWkz",
+    "ip": "66.39.173.154",
+    "latitude": 44.06,
+    "longitude": -121.32
+  }
+}
