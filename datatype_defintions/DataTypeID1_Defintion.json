@@ -1,0 +1,15 @@
+{
+  "content": {
+    "contentTypeID": "1",
+    "contentIPFS": "https://ipfs.io/ipfs/QmPYg1wFgs8E5M4ErRU2dgsxLZv6WFyxWxavpTN34M6Bhw",
+    "payableAddress": "0xff8b0f870ff56870dc5abd6cb3e6e89c8ba2e062",
+    "computingServiceRegionID": [
+      5,
+      6,
+      8,
+      17
+    ],
+    "fileType": "mp4",
+    "fileSize": "455680"
+  }
+}
