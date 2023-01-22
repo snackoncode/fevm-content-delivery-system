@@ -1,5 +1,7 @@
-# fevm-content-registration
+# fevm-content-delivery-system
 Repo for ETHGlobal Space Warp Hackathon
+
+# Functions Overiew
 
 This code defines a smart contract called "contentRegistry" that implements the ERC721 standard, which is a standard for creating non-fungible tokens (NFTs) on the Ethereum blockchain. The contract also uses several OpenZeppelin libraries for added functionality, such as Ownable (for access control), ReentrancyGuard (for security against reentrancy attacks), Counters (for counting the total supply of tokens), and Strings (for handling strings). The hybrid low-code/ no-code solution “721.so” is a useful tool to explore the functionality of the ERC-721 standard. Solutions, resources, and tools made for the citizen developer are critical to adoption of blockchain technology.
 
@@ -27,6 +29,8 @@ Additionally, the contract has the following variables:
 
 It is important to note that the contract is using OpenZeppelin Library and it is following the best practices for smart contract development.
 
+# Token Metadata Overview
+
 The token parameters in this contract are defined in a struct called "TokenParameters". This struct contains fields that store metadata about the digital asset that the token represents. The specific fields included in the struct can vary depending on the use case, but in the sample data provided, the fields include:
 
 - contentTypeID: An identifier that describes the type of content the token represents. In the sample data provided, the contentTypeID is set to "1" for video content and "2" for IOTeSimRegistration. This lookup table can be found on the Github page.
@@ -51,6 +55,8 @@ These fields provide a comprehensive set of metadata about the digital assets, w
 
 The token parameters are stored in the tokenParametersMap mapping, which is a private variable in the contract. The mapping uses tokenId as the key and TokenParameters struct as the value. This mapping allows users to look up the metadata associated with a specific token by passing the tokenId to the tokenParameters() function.
 
+# Example Use Cases
+
 This contract could be used for a variety of applications that involve registering and tracking unique digital assets on the blockchain.
 
 One use case could be for registering and tracking digital content from museums and archives of NYC libraries on the blockchain. For example, the NYC libraries could use this contract to register and track all the digital collections available in the city, such as historical photographs, documents, and videos. The mint function can be used to create a new token for each collection, with the metadata fields including a contentTypeID, an IPFS hash for the collection, a payable address for the collection's owner, and information about the computing service regions where the collection is highly available through network slicing. Users can then use the tokenParameters function to look up the metadata for a given collection token. The contract can also provide an API for third-party developers and researchers to access the registered digital collections, ensuring that the integrity and traceability of the data is maintained while providing a secure way for researchers to access the data without compromising the privacy of the data.
@@ -60,6 +66,8 @@ Another use case could be for registering and tracking public digital infrastruc
 Another use case could be for registering and tracking other digital assets like music, art, etc. The mint function can be used to create a new token for each asset, with the metadata fields including a contentTypeID, a IPFS hash for the asset file, a payable address for the asset's creator, and information about the computing service regions where the asset is available. Users can then use the tokenParameters function to look up the metadata for a given asset token.
 
 In all the above use cases, the mint function creates a new token with the given parameters and assigns it to the msg.sender. The setregistrationIsActive function controls whether token registration is currently active. The setBaseURI function sets the customBaseURI where the content is hosted.
+
+# Data Validation
 
 Data validation is a crucial aspect of smart contract development, as it ensures that the data stored on the blockchain is accurate and conforms to a specific format. One of the challenges with data validation is that, in cases where the data is stored on IPFS, the data needs to be retrieved from IPFS before it can be validated. Retrieving data from IPFS can be slow and resource-intensive, and if the data retrieval process fails, the validation process will also fail.
 
