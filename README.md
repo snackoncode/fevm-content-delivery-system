@@ -82,3 +82,58 @@ Another solution is to use a smart contract that can validate data stored in IPF
 Another way to address these challenges is to use an oracle service, which can fetch the data from IPFS and validate it against a schema before passing the validated data to the smart contract. This can help to ensure that the data conforms to a specific format and reduces the validation burden on the smart contract.
 
 It's also important to note that, regardless of the method chosen to validate the data, it's important to make sure that the validation process is secure and cannot be easily circumvented by malicious actors.
+
+# Deployment of registration smart contract
+
+1) Create a metamask account: https://metamask.io/download/
+
+2) Connect your metamask to the hyperspace testnet: https://metamask.io/download/. 
+
+![image](https://user-images.githubusercontent.com/99636009/213929051-276d78bf-1539-484f-b36d-63d3b346dab2.png)
+
+3) Get some test Filecoin for the hyperspace test: https://hyperspace.yoga/#faucet
+
+![image](https://user-images.githubusercontent.com/99636009/213929354-2cf8213d-aba8-4802-ba9d-42161580588f.png)
+
+![image](https://user-images.githubusercontent.com/99636009/213929485-04950056-a72d-425c-8bb0-8d65c344cddf.png)
+
+4) Go the remix IDE and connect metamask (Injected provider)
+
+![image](https://user-images.githubusercontent.com/99636009/213929573-9a1f1e78-a562-443e-a1ec-0533925df79e.png)
+
+![image](https://user-images.githubusercontent.com/99636009/213929627-6d4d5d4a-c22e-410f-9da6-e385d9989342.png)
+
+Successful remix connection:
+
+![image](https://user-images.githubusercontent.com/99636009/213929726-666917e3-1907-407e-9f19-89aa09e93d64.png)
+
+5) Import your contract to remix:
+
+![image](https://user-images.githubusercontent.com/99636009/213929868-91efa155-ae52-4c27-86ab-ff6a00dd5274.png)
+
+
+6) Compile your contract:
+
+![image](https://user-images.githubusercontent.com/99636009/213929945-21150371-4069-472e-aa98-9e03809a111a.png)
+
+7) Deploy, follow metamask prompts. Deployment may take some time:
+
+![image](https://user-images.githubusercontent.com/99636009/213929999-db0c04f4-83ee-42d6-87c0-c617bff9fcb8.png)
+
+![image](https://user-images.githubusercontent.com/99636009/213930022-353159f2-3eba-442b-93e4-96e010ffb4cc.png)
+
+You now have a smart contract deployed to the hyperspace testnet.
+
+![image](https://user-images.githubusercontent.com/99636009/213930052-7489ee37-867a-4fd7-b0e3-4e37b91d423b.png)
+
+First deployment address: 0xC72968e4E4BE0F1175a645f63B57a7700e21D77f
+
+You can register new registration tokens by passing an argument into the registration function like this:
+
+["1", "QmPYg1wFgs8E5M4ErRU2dgsxLZv6WFyxWxavpTN34M6Bhw", "0x9acded31Eb1A4E4CB2cF53403dcaFf3ABE6eB897"]
+
+The first argument decalres the metadata scheme type, the second is the IPFS hash ID of the content. In this example it is not a JSON adhering to scheme type 1 JSON metadata standard, but a tiktok from artist Oblé Reed (@oblereed). And my wallet address created for this hackathon.
+
+You can view the video here like this: https://ipfs.io/ipfs/QmPYg1wFgs8E5M4ErRU2dgsxLZv6WFyxWxavpTN34M6Bhw
+
+
