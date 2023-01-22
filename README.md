@@ -130,10 +130,17 @@ First deployment address: 0xC72968e4E4BE0F1175a645f63B57a7700e21D77f
 
 You can register new registration tokens by passing an argument into the registration function like this:
 
-["1", "QmPYg1wFgs8E5M4ErRU2dgsxLZv6WFyxWxavpTN34M6Bhw", "0x9acded31Eb1A4E4CB2cF53403dcaFf3ABE6eB897"]
+[1, "QmPYg1wFgs8E5M4ErRU2dgsxLZv6WFyxWxavpTN34M6Bhw", "0x9acded31Eb1A4E4CB2cF53403dcaFf3ABE6eB897"]
 
-The first argument decalres the metadata scheme type, the second is the IPFS hash ID of the content. In this example it is not a JSON adhering to scheme type 1 JSON metadata standard, but a tiktok from artist Oblé Reed (@oblereed). And my wallet address created for this hackathon.
+The first argument declares the metadata scheme type, the second is the IPFS hash ID of the content. In this example it is not a JSON adhering to scheme type 1 JSON metadata standard, but a tiktok from artist Oblé Reed (@oblereed). Fiannly, the third is my wallet address created for this hackathon.
 
 You can view the video here like this: https://ipfs.io/ipfs/QmPYg1wFgs8E5M4ErRU2dgsxLZv6WFyxWxavpTN34M6Bhw
+
+Paste the contract ID and register to your heart's content:
+
+![image](https://user-images.githubusercontent.com/99636009/213931606-3980764e-8c17-4d22-a8e5-ec2631c90e88.png)
+
+
+You can also use the FEVM Hardhat KIT to build Dapps, and automate registration: https://github.com/filecoin-project/fevm-hardhat-kit
 
 
